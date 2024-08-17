@@ -1,136 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Particles Example</title>
+    <title>Mi Sitio Web Extendido</title>
     <style>
-        body, html {
+        /* Ejemplo de estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            height: 100%;
-            overflow: hidden;
-            background-color: #111111;
+            background-color: #ffffff;
+            color: #333333;
         }
-
-        #particles-js {
-            position: absolute;
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            background-color: #333;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            display: inline-block;
+        }
+        nav ul li a:hover {
+            background-color: #4CAF50;
+        }
+        .fondo {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .gallery img {
             width: 100%;
-            height: 100%;
-            background-color: #111111;
-            background-image: url('');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 50% 50%;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <div id="particles-js"></div>
+    <header>
+        <h1>Bienvenido a Mi Sitio Web Extendido</h1>
+        <p>Explora nuestro contenido rico y diverso.</p>
+    </header>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        particlesJS('particles-js',
-            {
-                "particles": {
-                    "number": {
-                        "value": 100,
-                        "density": {
-                            "enable": true,
-                            "value_area": 800
-                        }
-                    },
-                    "color": {
-                        "value": "#004ee3"
-                    },
-                    "shape": {
-                        "type": "circle",
-                        "stroke": {
-                            "width": 0,
-                            "color": "#000000"
-                        },
-                        "polygon": {
-                            "nb_sides": 5
-                        }
-                    },
-                    "opacity": {
-                        "value": 0.7,
-                        "random": true,
-                        "anim": {
-                            "enable": true,
-                            "speed": 1,
-                            "opacity_min": 0.1,
-                            "sync": false
-                        }
-                    },
-                    "size": {
-                        "value": 5,
-                        "random": true,
-                        "anim": {
-                            "enable": true,
-                            "speed": 5,
-                            "size_min": 0.1,
-                            "sync": false
-                        }
-                    },
-                    "line_linked": {
-                        "enable": false
-                    },
-                    "move": {
-                        "enable": true,
-                        "speed": 1,
-                        "direction": "top",
-                        "random": true,
-                        "straight": false,
-                        "out_mode": "out",
-                        "bounce": false,
-                        "attract": {
-                            "enable": false,
-                            "rotateX": 600,
-                            "rotateY": 1200
-                        }
-                    }
-                },
-                "interactivity": {
-                    "detect_on": "canvas",
-                    "events": {
-                        "onhover": {
-                            "enable": false
-                        },
-                        "onclick": {
-                            "enable": false
-                        },
-                        "resize": true
-                    },
-                    "modes": {
-                        "grab": {
-                            "distance": 400,
-                            "line_linked": {
-                                "opacity": 0
-                            }
-                        },
-                        "bubble": {
-                            "distance": 250,
-                            "size": 0,
-                            "duration": 2,
-                            "opacity": 0,
-                            "speed": 3
-                        },
-                        "repulse": {
-                            "distance": 400,
-                            "duration": 0.4
-                        },
-                        "push": {
-                            "particles_nb": 4
-                        },
-                        "remove": {
-                            "particles_nb": 2
-                        }
-                    }
-                },
-                "retina_detect": true
-            }
-        );
-    </script>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Acerca de</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="portfolio.html">Portafolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="fondo">
+        <!-- Sección de Bienvenida -->
+        <section>
+            <h2>Acerca de Nosotros</h2>
+            <p>Somos una empresa dedicada a brindar soluciones tecnológicas innovadoras. Nuestro equipo de expertos trabaja arduamente para ofrecer productos y servicios de alta calidad.</p>
+            <p>Nuestro objetivo es proporcionar a nuestros clientes las herramientas necesarias para alcanzar sus metas y mejorar su rendimiento.</p>
+        </section>
+
+        <!-- Sección de Servicios -->
+        <section>
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li>Desarrollo Web</li>
+                <li>Diseño Gráfico</li>
+                <li>Marketing Digital</li>
+                <li>Consultoría Tecnológica</li>
+            </ul>
+            <p>Ofrecemos una gama completa de servicios para ayudar a tu negocio a destacar en el mercado digital.</p>
+        </section>
+
+        <!-- Sección de Portafolio -->
+        <section>
+            <h2>Portafolio</h2>
+            <div class="gallery">
+                <img src="proyecto1.jpg" alt="Proyecto 1">
+                <img src="proyecto2.jpg" alt="Proyecto 2">
+                <img src="proyecto3.jpg" alt="Proyecto 3">
+                <img src="proyecto4.jpg" alt="Proyecto 4">
+            </div>
+            <p>Aquí puedes ver algunos de los proyectos que hemos realizado para nuestros clientes.</p>
+        </section>
+
+        <!-- Sección de Blog -->
+        <section>
+            <h2>Últimas Entradas del Blog</h2>
+            <article>
+                <h3>Cómo Mejorar tu Presencia en Línea</h3>
+                <p>Publicado el 15 de Agosto de 2024</p>
+                <p>En este artículo, exploramos estrategias efectivas para mejorar la presencia en línea de tu empresa...</p>
+                <a href="blog/mejorar-presencia.html">Leer más</a>
+            </article>
+            <article>
+                <h3>Las Tendencias del Diseño Web en 2024</h3>
+                <p>Publicado el 10 de Agosto de 2024</p>
+                <p>Descubre las últimas tendencias en diseño web que están dominando este año...</p>
+                <a href="blog/tendencias-diseno-2024.html">Leer más</a>
+            </article>
+        </section>
+
+        <!-- Sección de Testimonios -->
+        <section>
+            <h2>Testimonios</h2>
+            <blockquote>
+                <p>"Gracias a su increíble equipo, pudimos lanzar nuestro nuevo sitio web a tiempo y con un diseño impecable. ¡Muy recomendados!"</p>
+                <cite>- Juan Pérez, CEO de Empresa X</cite>
+            </blockquote>
+            <blockquote>
+                <p>"El servicio de marketing digital que nos ofrecieron ha aumentado significativamente nuestras ventas. Estamos muy satisfechos con los resultados."</p>
+                <cite>- María Gómez, Directora de Marketing en Empresa Y</cite>
+            </blockquote>
+        </section>
+
+        <!-- Sección de Formulario de Contacto -->
+        <section>
+            <h2>Contacto</h2>
+            <form action="/enviar-formulario" method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje"></textarea><br><br>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+        <p><a href="privacidad.html">Política de Privacidad</a> | <a href="terminos.html">Términos y Condiciones</a></p>
+    </footer>
 </body>
 </html>
